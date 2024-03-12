@@ -17,7 +17,7 @@ interface WeatherForecast {
 })
 export class HelloComponent implements OnInit {
   public forecasts: WeatherForecast[] = [];
-  public baseUrl: string = "http://localhost:5130";
+  public baseUrl: string = "http://localhost:5269";
 
   constructor(private http: HttpClient) {}
 
