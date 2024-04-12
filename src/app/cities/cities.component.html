@@ -1,1 +1,20 @@
-<p>cities works!</p>
+<h1>Cities</h1>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th><th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (City of cities; track $index) {
+            <tr>
+                <td>
+                    <a [routerLink] = "['/cityParks', City.cityId]">{{City.cityId}}</a>
+                </td>
+                <td>
+                    {{City.cityName}}
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -15,5 +15,5 @@ import {MatButtonModule} from '@angular/material/button';
   styleUrl: './nav-bar.component.css'
 })
 export class NavBarComponent {
-  constructor() {}
+
 }
