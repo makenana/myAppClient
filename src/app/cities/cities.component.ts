@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { City } from './city';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment.development';
@@ -12,7 +12,7 @@ import { RouterLink } from '@angular/router';
   templateUrl: './cities.component.html',
   styleUrl: './cities.component.css'
 })
-export class CitiesComponent {
+export class CitiesComponent implements OnInit {
   public cities: City[] = [];
 
   constructor(private http: HttpClient) { }
